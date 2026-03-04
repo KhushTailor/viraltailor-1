@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Viral Tailor — Certified Nutritionist Vadodara</title>
+  <meta name="description" content="Learn about Viral Tailor, certified Ayurvedic Nutritionist in Vadodara with diploma, certification and internship experience."/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--sage:#7A9E7E;--sage-light:#B5CEB8;--sage-dark:#4A6F4E;--cream:#FAF7F2;--warm-white:#F5F0E8;--charcoal:#2C2C2C;--gold:#C9A84C;--text-muted:#7A7A7A}
+    html{scroll-behavior:smooth}
+    body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--charcoal);overflow-x:hidden}
+    nav{position:fixed;top:0;width:100%;z-index:100;padding:1.2rem 5%;display:flex;justify-content:space-between;align-items:center;background:rgba(250,247,242,0.93);backdrop-filter:blur(14px);border-bottom:1px solid rgba(122,158,126,0.15)}
+    .nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;color:var(--sage-dark);text-decoration:none}
+    .nav-logo span{color:var(--gold)}
+    .nav-links{display:flex;gap:2rem;list-style:none}
+    .nav-links a{text-decoration:none;color:var(--charcoal);font-size:0.8rem;font-weight:500;letter-spacing:0.05em;text-transform:uppercase;transition:color 0.3s;padding:0.3rem 0;border-bottom:2px solid transparent}
+    .nav-links a:hover,.nav-links a.active{color:var(--sage-dark);border-bottom-color:var(--gold)}
+    .nav-cta{background:var(--sage-dark)!important;color:#fff!important;padding:0.55rem 1.4rem!important;border-radius:2rem;border-bottom:none!important}
+    .nav-cta:hover{background:var(--gold)!important}
+    .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;z-index:200}
+    .hamburger span{display:block;width:24px;height:2px;background:var(--charcoal);border-radius:2px}
+    @media(max-width:900px){.hamburger{display:flex}.nav-links{display:none}.nav-links.open{display:flex;flex-direction:column;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(250,247,242,0.98);align-items:center;justify-content:center;gap:2.5rem;z-index:150}.nav-links.open a{font-size:1.3rem}}
+    .page-hero{min-height:50vh;display:flex;align-items:center;padding:140px 10% 5rem;background:linear-gradient(135deg,var(--warm-white) 0%,var(--cream) 100%);position:relative;overflow:hidden}
+    .page-hero::before{content:'';position:absolute;top:-50%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(181,206,184,0.2) 0%,transparent 70%);pointer-events:none}
+    .page-tag{font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:1rem}
+    .page-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:300;line-height:1.1;color:var(--charcoal);margin-bottom:1rem}
+    .page-title em{font-style:italic;color:var(--sage-dark)}
+    .page-sub{font-size:1.05rem;color:var(--text-muted);line-height:1.7;max-width:500px}
+    section{padding:5rem 10%}
+    .section-tag{font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:1rem}
+    .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:400;line-height:1.2;color:var(--charcoal);margin-bottom:1rem}
+    .section-title em{font-style:italic;color:var(--sage-dark)}
+    .btn-primary{background:var(--sage-dark);color:#fff;padding:0.9rem 2.2rem;border-radius:3rem;font-size:0.9rem;font-weight:500;text-decoration:none;transition:all 0.3s;box-shadow:0 4px 20px rgba(74,111,78,0.3);display:inline-block}
+    .btn-primary:hover{background:var(--gold);transform:translateY(-2px)}
+    /* ABOUT GRID */
+    .about-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;align-items:start}
+    .about-img-wrap{position:relative}
+    .about-img{width:100%;aspect-ratio:3/4;background:linear-gradient(135deg,var(--sage-light),var(--sage-dark));border-radius:2rem 5rem 2rem 5rem;display:flex;align-items:center;justify-content:center;font-size:8rem;box-shadow:0 30px 80px rgba(74,111,78,0.2)}
+    .cert-float{position:absolute;background:#fff;border-radius:1rem;padding:1rem 1.3rem;box-shadow:0 6px 24px rgba(0,0,0,0.1);border-left:3px solid var(--gold);min-width:180px}
+    .cert-float-1{bottom:-20px;right:-20px}
+    .cert-float-2{top:30px;left:-20px}
+    .cert-label{font-size:0.68rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted)}
+    .cert-value{font-size:0.88rem;font-weight:600;color:var(--charcoal);margin-top:0.2rem}
+    .about-text p{font-size:1rem;color:var(--text-muted);line-height:1.8;margin-bottom:1.5rem}
+    .about-text h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3vw,2.8rem);font-weight:400;color:var(--charcoal);margin-bottom:1.5rem;line-height:1.2}
+    .about-text h2 em{font-style:italic;color:var(--sage-dark)}
+    /* CERTS SECTION */
+    .certs-section{background:var(--warm-white)}
+    .certs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem}
+    .cert-card{background:#fff;border-radius:1.5rem;padding:2.5rem 2rem;text-align:center;border:1px solid rgba(122,158,126,0.1);transition:all 0.3s;position:relative;overflow:hidden}
+    .cert-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--sage),var(--gold))}
+    .cert-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,0.08)}
+    .cert-icon{font-size:3rem;margin-bottom:1rem;display:block}
+    .cert-card-title{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--charcoal);margin-bottom:0.5rem}
+    .cert-card-sub{font-size:0.85rem;color:var(--text-muted);line-height:1.6}
+    .cert-card-badge{display:inline-block;background:rgba(122,158,126,0.12);color:var(--sage-dark);font-size:0.72rem;font-weight:500;letter-spacing:0.05em;padding:0.3rem 0.8rem;border-radius:2rem;margin-top:0.8rem}
+    /* VALUES */
+    .values-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:3rem}
+    .value-card{background:var(--warm-white);border-radius:1.2rem;padding:2rem;display:flex;gap:1rem;align-items:flex-start}
+    .value-icon{width:48px;height:48px;border-radius:50%;background:rgba(122,158,126,0.12);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
+    .value-title{font-weight:600;color:var(--charcoal);margin-bottom:0.3rem}
+    .value-desc{font-size:0.88rem;color:var(--text-muted);line-height:1.6}
+    /* CTA */
+    .cta-strip{background:var(--charcoal);text-align:center;padding:5rem 10%}
+    .cta-strip h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);color:#fff;font-weight:300;margin-bottom:1rem}
+    .cta-strip h2 em{font-style:italic;color:var(--sage-light)}
+    .cta-strip p{color:rgba(255,255,255,0.6);margin-bottom:2rem}
+    footer{background:var(--charcoal);padding:2rem 5%;text-align:center}
+    .footer-links{display:flex;justify-content:center;gap:2rem;margin-bottom:1rem;flex-wrap:wrap}
+    .footer-links a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;transition:color 0.3s}
+    .footer-links a:hover{color:var(--sage-light)}
+    .footer-socials{display:flex;justify-content:center;gap:1rem;margin-bottom:1rem}
+    .footer-socials a{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;text-decoration:none;color:rgba(255,255,255,0.6);transition:all 0.3s}
+    .footer-socials a:hover{background:var(--sage-dark);color:#fff}
+    .footer-socials svg{width:16px;height:16px;fill:currentColor}
+    .footer-text{color:rgba(255,255,255,0.4);font-size:0.8rem}
+    .footer-text span{color:var(--sage-light)}
+    .floating-buttons{position:fixed;bottom:24px;right:24px;display:flex;flex-direction:column;gap:12px;z-index:999}
+    .float-btn{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:all 0.3s;box-shadow:0 4px 16px rgba(0,0,0,0.2)}
+    .float-btn svg{width:24px;height:24px;fill:#fff}
+    .float-btn:hover{transform:scale(1.12)}
+    .float-whatsapp{background:#25D366}
+    .float-instagram{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
+    .float-facebook{background:#1877F2}
+    @media(max-width:900px){.about-grid{grid-template-columns:1fr}.about-img-wrap{display:none}.certs-grid{grid-template-columns:1fr}.values-grid{grid-template-columns:1fr}section{padding:4rem 6%}.page-hero{padding:120px 6% 4rem}.floating-buttons{bottom:18px;right:18px}.float-btn{width:46px;height:46px}}
+  </style>
+</head>
+<body>
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">Nutri<span>Balance</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="transformations.html">Results</a></li>
+    <li><a href="testimonials.html">Reviews</a></li>
+    <li><a href="contact.html" class="nav-cta">Book a Call</a></li>
+  </ul>
+  <button class="hamburger" id="menuBtn"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page-hero">
+  <div>
+    <div class="page-tag">About Me</div>
+    <h1 class="page-title">Hi, I'm <em>Viral Tailor</em></h1>
+    <p class="page-sub">Certified Ayurvedic Nutritionist dedicated to transforming lives through the power of personalized nutrition — one diet plan at a time.</p>
+  </div>
+</div>
+
+<section>
+  <div class="about-grid">
+    <div class="about-img-wrap">
+      <div class="about-img">👩‍⚕️</div>
+      <div class="cert-float cert-float-1"><div class="cert-label">Latest</div><div class="cert-value">🎓 Diploma · May 2025</div></div>
+      <div class="cert-float cert-float-2"><div class="cert-label">Experience</div><div class="cert-value">💼 1.5+ Years</div></div>
+    </div>
+    <div class="about-text">
+      <div class="section-tag">My Story</div>
+      <h2>Passionate about <em>healing through food</em></h2>
+      <p>I am Viral Tailor, a certified Ayurvedic Nutritionist based in Vadodara, Gujarat. My journey into nutrition began with a deep passion for understanding the relationship between food and health — and how the right diet can truly transform lives.</p>
+      <p>With 1.5 years of hands-on experience, I have helped 100+ clients across India and internationally achieve their health goals — from sustainable weight loss to reversing thyroid disorders through targeted nutrition plans.</p>
+      <p>I combine the ancient wisdom of Ayurvedic nutrition with evidence-based modern nutritional science to create plans that are not just effective, but also enjoyable and sustainable for the long term.</p>
+      <p>My approach is simple: <strong>I listen, I understand, and I create a plan made just for you.</strong> No generic diets, no shortcuts — just real, lasting results.</p>
+      <a href="contact.html" class="btn-primary">Book a Consultation</a>
+    </div>
+  </div>
+</section>
+
+<section class="certs-section">
+  <div class="section-tag">Qualifications</div>
+  <h2 class="section-title">My <em>certifications</em> & training</h2>
+  <div class="certs-grid">
+    <div class="cert-card">
+      <span class="cert-icon">🎓</span>
+      <div class="cert-card-title">Diploma in Ayurvedic Diet & Nutrition</div>
+      <div class="cert-card-sub">Arogyam Institute — Internationally Recognized, ISO 9001:2015 Certified, Skill India Accredited. Covering Ayurvedic nutrition, body types, therapeutic diet planning and the latest diet trends.</div>
+      <div class="cert-card-badge">May 2025 · 165 CPD Hours</div>
+    </div>
+    <div class="cert-card">
+      <span class="cert-icon">🏅</span>
+      <div class="cert-card-title">Certification in Ayurvedic Diet & Nutrition</div>
+      <div class="cert-card-sub">Arogyam Institute — Completed 1 month online certification course covering Ayurvedic diet principles, nutrition fundamentals and practical application.</div>
+      <div class="cert-card-badge">Nov–Dec 2024 · 46 CPD Hours</div>
+    </div>
+    <div class="cert-card">
+      <span class="cert-icon">💼</span>
+      <div class="cert-card-title">Internship — Arogyam Ayurveda</div>
+      <div class="cert-card-sub">Practical internship at Arogyam Ayurveda & Panchkarma Centre, Jalandhar. Gained real-world experience in diet planning and nutrition consultation.</div>
+      <div class="cert-card-badge">May – June 2025</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-tag">My Approach</div>
+  <h2 class="section-title">What makes my approach <em>different</em></h2>
+  <div class="values-grid">
+    <div class="value-card"><div class="value-icon">🎯</div><div><div class="value-title">100% Personalized Plans</div><div class="value-desc">Every client gets a unique plan built around their body, goals, lifestyle and food preferences. No copy-paste diets.</div></div></div>
+    <div class="value-card"><div class="value-icon">🌿</div><div><div class="value-title">Ayurvedic + Modern Science</div><div class="value-desc">I blend ancient Ayurvedic wisdom with modern nutritional science for a holistic, effective approach to health.</div></div></div>
+    <div class="value-card"><div class="value-icon">💚</div><div><div class="value-title">Till You're Satisfied</div><div class="value-desc">I work with every client until they are fully satisfied with their results. No time limits, no pressure.</div></div></div>
+    <div class="value-card"><div class="value-icon">🌍</div><div><div class="value-title">International Experience</div><div class="value-desc">Successfully helped clients across India and internationally — including reversing thyroid disorders in Canadian clients.</div></div></div>
+    <div class="value-card"><div class="value-icon">📱</div><div><div class="value-title">Always Accessible</div><div class="value-desc">Available Mon–Sat, 10 AM–10 PM IST. Online consultations available for clients across India and worldwide.</div></div></div>
+    <div class="value-card"><div class="value-icon">🍽️</div><div><div class="value-title">Realistic & Enjoyable</div><div class="value-desc">I create plans with foods you actually enjoy. Healthy eating should never feel like punishment.</div></div></div>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <h2>Let's work on your health <em>together</em></h2>
+  <p>Book a free consultation and take the first step towards your transformation.</p>
+  <a href="contact.html" class="btn-primary">Book a Consultation →</a>
+</section>
+
+<footer>
+  <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="transformations.html">Results</a><a href="testimonials.html">Reviews</a><a href="contact.html">Contact</a></div>
+  <div class="footer-socials">
+    <a href="https://www.instagram.com/nutritionist_viral" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+    <a href="https://www.facebook.com/profile.php?id=100000057417354" target="_blank"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385h-3.047v-3.47h3.047v-2.642c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.514c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385c5.738-.9 10.126-5.864 10.126-11.854z"/></svg></a>
+    <a href="https://wa.me/919601949860" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+  </div>
+  <p class="footer-text">© 2026 <span>NutriBalance</span> by Viral Tailor · Vadodara, Gujarat</p>
+</footer>
+
+<div class="floating-buttons">
+  <a href="https://wa.me/919601949860?text=Hi%20Viral%2C%20I%27d%20like%20to%20know%20more%20about%20your%20nutrition%20services" class="float-btn float-whatsapp" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+  <a href="https://www.instagram.com/nutritionist_viral" class="float-btn float-instagram" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+  <a href="https://www.facebook.com/profile.php?id=100000057417354" class="float-btn float-facebook" target="_blank"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385h-3.047v-3.47h3.047v-2.642c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.514c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385c5.738-.9 10.126-5.864 10.126-11.854z"/></svg></a>
+</div>
+
+<script>
+  var btn=document.getElementById('menuBtn');var menu=document.getElementById('navLinks');
+  btn.onclick=function(){menu.classList.toggle('open')};
+  menu.querySelectorAll('a').forEach(function(a){a.onclick=function(){menu.classList.remove('open')}});
+  window.onscroll=function(){document.getElementById('mainNav').style.boxShadow=window.scrollY>50?'0 2px 20px rgba(0,0,0,0.08)':'none'};
+</script>
+</body>
+</html>

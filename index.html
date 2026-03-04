@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="google-site-verification" content="yAJdlX8JT_cqRWQGffxbkzkeRLl3WWSQ2fIB5pEYC3Y"/>
+  <title>Viral Tailor — Certified Nutritionist in Vadodara</title>
+  <meta name="description" content="Viral Tailor is a certified Ayurvedic Nutritionist in Vadodara offering personalized diet plans for weight loss, thyroid reversal, diabetes & more."/>
+  <meta name="keywords" content="nutritionist Vadodara, diet plan, weight loss, thyroid reversal, Viral Tailor"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--sage:#7A9E7E;--sage-light:#B5CEB8;--sage-dark:#4A6F4E;--cream:#FAF7F2;--warm-white:#F5F0E8;--charcoal:#2C2C2C;--gold:#C9A84C;--text-muted:#7A7A7A}
+    html{scroll-behavior:smooth}
+    body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--charcoal);overflow-x:hidden}
+    nav{position:fixed;top:0;width:100%;z-index:100;padding:1.2rem 5%;display:flex;justify-content:space-between;align-items:center;background:rgba(250,247,242,0.93);backdrop-filter:blur(14px);border-bottom:1px solid rgba(122,158,126,0.15)}
+    .nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;color:var(--sage-dark);text-decoration:none}
+    .nav-logo span{color:var(--gold)}
+    .nav-links{display:flex;gap:2rem;list-style:none}
+    .nav-links a{text-decoration:none;color:var(--charcoal);font-size:0.8rem;font-weight:500;letter-spacing:0.05em;text-transform:uppercase;transition:color 0.3s;padding:0.3rem 0;border-bottom:2px solid transparent}
+    .nav-links a:hover,.nav-links a.active{color:var(--sage-dark);border-bottom-color:var(--gold)}
+    .nav-cta{background:var(--sage-dark)!important;color:#fff!important;padding:0.55rem 1.4rem!important;border-radius:2rem;border-bottom:none!important}
+    .nav-cta:hover{background:var(--gold)!important}
+    .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;z-index:200}
+    .hamburger span{display:block;width:24px;height:2px;background:var(--charcoal);border-radius:2px;transition:all 0.3s}
+    @media(max-width:900px){.hamburger{display:flex}.nav-links{display:none}.nav-links.open{display:flex;flex-direction:column;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(250,247,242,0.98);align-items:center;justify-content:center;gap:2.5rem;z-index:150}.nav-links.open a{font-size:1.3rem}}
+    .page-hero{min-height:60vh;display:flex;align-items:center;padding:120px 10% 6rem;position:relative;overflow:hidden}
+    .page-hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 80% 20%,rgba(181,206,184,0.25) 0%,transparent 60%),radial-gradient(ellipse at 20% 80%,rgba(201,168,76,0.1) 0%,transparent 50%);pointer-events:none}
+    .page-hero-content{position:relative;z-index:1;max-width:600px}
+    .page-tag{font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:1rem;display:flex;align-items:center;gap:0.5rem}
+    .page-tag::before{content:'✦';font-size:0.6rem}
+    .page-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4.5rem);font-weight:300;line-height:1.1;color:var(--charcoal);margin-bottom:1.5rem}
+    .page-title em{font-style:italic;color:var(--sage-dark)}
+    .page-sub{font-size:1.05rem;color:var(--text-muted);line-height:1.7;max-width:500px}
+    .btn-primary{background:var(--sage-dark);color:#fff;padding:0.9rem 2.2rem;border-radius:3rem;font-size:0.9rem;font-weight:500;text-decoration:none;transition:all 0.3s;box-shadow:0 4px 20px rgba(74,111,78,0.3);display:inline-block}
+    .btn-primary:hover{background:var(--gold);transform:translateY(-2px)}
+    .btn-ghost{color:var(--charcoal);font-size:0.9rem;text-decoration:none;display:inline-flex;align-items:center;gap:0.5rem;font-weight:500;transition:gap 0.3s}
+    .btn-ghost:hover{gap:0.9rem;color:var(--sage-dark)}
+    section{padding:5rem 10%}
+    .section-tag{font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:1rem}
+    .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:400;line-height:1.2;color:var(--charcoal);margin-bottom:1rem}
+    .section-title em{font-style:italic;color:var(--sage-dark)}
+    .section-sub{font-size:1rem;color:var(--text-muted);line-height:1.7;max-width:600px;margin:0 auto 3rem}
+    footer{background:var(--charcoal);padding:3rem 5% 2rem;text-align:center}
+    .footer-links{display:flex;justify-content:center;gap:2rem;margin-bottom:1.5rem;flex-wrap:wrap}
+    .footer-links a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.05em;transition:color 0.3s}
+    .footer-links a:hover{color:var(--sage-light)}
+    .footer-socials{display:flex;justify-content:center;gap:1rem;margin-bottom:1.5rem}
+    .footer-socials a{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;text-decoration:none;color:rgba(255,255,255,0.6);transition:all 0.3s}
+    .footer-socials a:hover{background:var(--sage-dark);color:#fff;transform:translateY(-3px)}
+    .footer-socials svg{width:18px;height:18px;fill:currentColor}
+    .footer-text{color:rgba(255,255,255,0.45);font-size:0.82rem}
+    .footer-text span{color:var(--sage-light)}
+    .floating-buttons{position:fixed;bottom:24px;right:24px;display:flex;flex-direction:column;gap:12px;z-index:999}
+    .float-btn{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:all 0.3s;box-shadow:0 4px 16px rgba(0,0,0,0.2)}
+    .float-btn:hover{transform:scale(1.12)}
+    .float-btn svg{width:24px;height:24px;fill:#fff}
+    .float-whatsapp{background:#25D366;animation:floatAnim 3s ease-in-out infinite}
+    .float-instagram{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
+    .float-facebook{background:#1877F2}
+    @keyframes floatAnim{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    @media(max-width:900px){section{padding:4rem 6%}.page-hero{padding:120px 6% 4rem}.floating-buttons{bottom:18px;right:18px}.float-btn{width:46px;height:46px}}
+
+    /* HOME SPECIFIC */
+    .hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;padding-top:80px;position:relative;overflow:hidden}
+    .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 80% 20%,rgba(181,206,184,0.25) 0%,transparent 60%),radial-gradient(ellipse at 20% 80%,rgba(201,168,76,0.1) 0%,transparent 50%);pointer-events:none}
+    .hero-left{display:flex;flex-direction:column;justify-content:center;padding:6% 6% 6% 10%;position:relative;z-index:1}
+    .hero-badge{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(122,158,126,0.12);border:1px solid rgba(122,158,126,0.3);color:var(--sage-dark);font-size:0.75rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;padding:0.4rem 1rem;border-radius:2rem;width:fit-content;margin-bottom:2rem}
+    .hero-badge::before{content:'✦';font-size:0.6rem}
+    .hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,5vw,5rem);font-weight:300;line-height:1.1;color:var(--charcoal);margin-bottom:1.5rem}
+    .hero-title em{font-style:italic;color:var(--sage-dark)}
+    .hero-title strong{font-weight:600;display:block}
+    .hero-sub{font-size:1.05rem;color:var(--text-muted);line-height:1.7;max-width:420px;margin-bottom:2.5rem}
+    .hero-actions{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+    .hero-stats{display:flex;gap:2.5rem;margin-top:3.5rem;padding-top:2rem;border-top:1px solid rgba(122,158,126,0.2);flex-wrap:wrap}
+    .stat-num{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:600;color:var(--sage-dark);line-height:1}
+    .stat-label{font-size:0.78rem;color:var(--text-muted);margin-top:0.3rem}
+    .hero-right{position:relative;display:flex;align-items:center;justify-content:center;padding:4rem 8% 4rem 2%}
+    .hero-image-frame{width:100%;max-width:460px;aspect-ratio:3/4;background:linear-gradient(135deg,var(--sage-light) 0%,var(--sage) 50%,var(--sage-dark) 100%);border-radius:2rem 6rem 2rem 6rem;position:relative;overflow:hidden;box-shadow:0 30px 80px rgba(74,111,78,0.2)}
+    .hero-image-inner{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem}
+    .hero-icon-circle{width:120px;height:120px;background:rgba(255,255,255,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:3.5rem;border:2px solid rgba(255,255,255,0.3)}
+    .hero-image-text{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:#fff;font-weight:300;text-align:center;padding:0 2rem;line-height:1.4}
+    .floating-card{position:absolute;background:#fff;border-radius:1rem;padding:1rem 1.4rem;box-shadow:0 8px 30px rgba(0,0,0,0.1);display:flex;align-items:center;gap:0.8rem}
+    .floating-card-1{left:-30px;top:25%;animation:floatAnim 4s ease-in-out infinite}
+    .floating-card-2{right:-20px;bottom:28%;animation:floatAnim 4s 2s ease-in-out infinite}
+    .card-icon{font-size:1.6rem}
+    .card-label{font-size:0.7rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em}
+    .card-value{font-size:0.95rem;font-weight:600;color:var(--charcoal)}
+    /* QUICK SERVICES GRID */
+    .quick-services{background:var(--warm-white)}
+    .quick-services-header{text-align:center;margin-bottom:3rem}
+    .quick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+    .quick-card{background:#fff;border-radius:1.2rem;padding:2rem;border:1px solid rgba(122,158,126,0.1);transition:all 0.3s;text-decoration:none;color:var(--charcoal);display:block}
+    .quick-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,0.08);border-color:var(--sage-light)}
+    .quick-emoji{font-size:2rem;margin-bottom:1rem;display:block}
+    .quick-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;margin-bottom:0.5rem}
+    .quick-desc{font-size:0.85rem;color:var(--text-muted);line-height:1.6}
+    /* WHY ME */
+    .why-me{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+    .why-visual{background:linear-gradient(135deg,var(--sage-light),var(--sage));border-radius:2rem;padding:3rem;display:flex;flex-direction:column;gap:1.5rem}
+    .why-stat{background:rgba(255,255,255,0.9);border-radius:1rem;padding:1.5rem;display:flex;align-items:center;gap:1rem}
+    .why-stat-icon{font-size:2rem}
+    .why-stat-num{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;color:var(--sage-dark);line-height:1}
+    .why-stat-label{font-size:0.8rem;color:var(--text-muted)}
+    .why-points{display:flex;flex-direction:column;gap:1.2rem;margin:1.5rem 0 2rem}
+    .why-point{display:flex;gap:1rem;align-items:flex-start}
+    .why-dot{width:32px;height:32px;border-radius:50%;background:rgba(122,158,126,0.12);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+    .why-text{font-size:0.95rem;color:var(--charcoal);line-height:1.6}
+    /* CTA STRIP */
+    .cta-strip{background:var(--charcoal);text-align:center;padding:5rem 10%}
+    .cta-strip h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);color:#fff;font-weight:300;margin-bottom:1rem}
+    .cta-strip h2 em{font-style:italic;color:var(--sage-light)}
+    .cta-strip p{color:rgba(255,255,255,0.6);margin-bottom:2rem;font-size:1rem}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.hero-right{display:none}.hero-left{padding:8% 6% 6%}.quick-grid{grid-template-columns:1fr}.why-me{grid-template-columns:1fr}.why-visual{display:none}}
+  </style>
+</head>
+<body>
+
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">Nutri<span>Balance</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="transformations.html">Results</a></li>
+    <li><a href="testimonials.html">Reviews</a></li>
+    <li><a href="contact.html" class="nav-cta">Book a Call</a></li>
+  </ul>
+  <button class="hamburger" id="menuBtn" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-left">
+    <div class="hero-badge">Certified Nutritionist &amp; Ayurvedic Diet Specialist</div>
+    <h1 class="hero-title"><em>Transform</em> your health<strong>with expert nutrition</strong></h1>
+    <p class="hero-sub">Personalized diet plans for weight loss, weight gain, thyroid reversal, diabetes &amp; more — crafted by <strong>Viral Tailor</strong>, your dedicated nutrition expert in Vadodara.</p>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn-primary">Get Your Diet Plan</a>
+      <a href="services.html" class="btn-ghost">Explore services →</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">100+</div><div class="stat-label">Clients Transformed</div></div>
+      <div><div class="stat-num">1.5+</div><div class="stat-label">Years Experience</div></div>
+      <div><div class="stat-num">100%</div><div class="stat-label">Dedication</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-image-frame">
+      <div class="hero-image-inner">
+        <div class="hero-icon-circle">🥗</div>
+        <div class="hero-image-text">Your journey to <br/>balanced wellness <br/>starts here</div>
+      </div>
+    </div>
+    <div class="floating-card floating-card-1"><div class="card-icon">🎯</div><div><div class="card-label">Speciality</div><div class="card-value">Thyroid Reversal</div></div></div>
+    <div class="floating-card floating-card-2"><div class="card-icon">🌍</div><div><div class="card-label">Clients</div><div class="card-value">India &amp; Canada</div></div></div>
+  </div>
+</section>
+
+<!-- QUICK SERVICES -->
+<section class="quick-services">
+  <div class="quick-services-header">
+    <div class="section-tag">What I Offer</div>
+    <h2 class="section-title">Diet plans <em>for every goal</em></h2>
+  </div>
+  <div class="quick-grid">
+    <a href="services.html" class="quick-card"><span class="quick-emoji">⚖️</span><div class="quick-name">Weight Loss</div><p class="quick-desc">Sustainable fat loss plans tailored to your body and lifestyle.</p></a>
+    <a href="services.html" class="quick-card"><span class="quick-emoji">💪</span><div class="quick-name">Weight Gain</div><p class="quick-desc">Healthy mass and muscle building through smart nutrition.</p></a>
+    <a href="services.html" class="quick-card"><span class="quick-emoji">🦋</span><div class="quick-name">Thyroid Reversal</div><p class="quick-desc">Specialized plans to heal and reverse thyroid disorders naturally.</p></a>
+    <a href="services.html" class="quick-card"><span class="quick-emoji">🩸</span><div class="quick-name">Diabetes Management</div><p class="quick-desc">Evidence-based diet plans to control blood sugar levels.</p></a>
+    <a href="services.html" class="quick-card"><span class="quick-emoji">🌿</span><div class="quick-name">Ayurvedic Diet</div><p class="quick-desc">Ancient wisdom meets modern nutrition for holistic healing.</p></a>
+    <a href="services.html" class="quick-card"><span class="quick-emoji">✨</span><div class="quick-name">Hormonal &amp; PCOS</div><p class="quick-desc">Targeted plans to balance hormones and manage PCOS naturally.</p></a>
+  </div>
+</section>
+
+<!-- WHY ME -->
+<section>
+  <div class="why-me">
+    <div class="why-visual">
+      <div class="why-stat"><div class="why-stat-icon">👥</div><div><div class="why-stat-num">100+</div><div class="why-stat-label">Happy Clients</div></div></div>
+      <div class="why-stat"><div class="why-stat-icon">🌍</div><div><div class="why-stat-num">2+</div><div class="why-stat-label">Countries Served</div></div></div>
+      <div class="why-stat"><div class="why-stat-icon">🎓</div><div><div class="why-stat-num">3</div><div class="why-stat-label">Certifications</div></div></div>
+      <div class="why-stat"><div class="why-stat-icon">⭐</div><div><div class="why-stat-num">5.0</div><div class="why-stat-label">Client Rating</div></div></div>
+    </div>
+    <div>
+      <div class="section-tag">Why Choose Me</div>
+      <h2 class="section-title">Nutrition that <em>actually works</em></h2>
+      <div class="why-points">
+        <div class="why-point"><div class="why-dot">🎯</div><div class="why-text"><strong>100% Personalized</strong> — Every plan is built specifically for your body, goals and lifestyle. No generic meal plans.</div></div>
+        <div class="why-point"><div class="why-dot">🌿</div><div class="why-text"><strong>Ayurvedic + Modern</strong> — I combine ancient Ayurvedic wisdom with modern nutritional science for best results.</div></div>
+        <div class="why-point"><div class="why-dot">🌍</div><div class="why-text"><strong>Proven International Results</strong> — Successfully helped clients across India and Canada including thyroid reversal cases.</div></div>
+        <div class="why-point"><div class="why-dot">💚</div><div class="why-text"><strong>Till You're Satisfied</strong> — I work with you until you achieve your health goals. No time limits, no shortcuts.</div></div>
+      </div>
+      <a href="about.html" class="btn-primary">Learn More About Me</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section class="cta-strip">
+  <h2>Ready to <em>transform</em> your health?</h2>
+  <p>Book a free consultation and get your personalized diet plan today.</p>
+  <a href="contact.html" class="btn-primary">Get Started Today →</a>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="transformations.html">Results</a>
+    <a href="testimonials.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-socials">
+    <a href="https://www.instagram.com/nutritionist_viral" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+    <a href="https://www.facebook.com/profile.php?id=100000057417354" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385h-3.047v-3.47h3.047v-2.642c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.514c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385c5.738-.9 10.126-5.864 10.126-11.854z"/></svg></a>
+    <a href="https://wa.me/919601949860" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+  </div>
+  <p class="footer-text">© 2026 <span>NutriBalance</span> by Viral Tailor · Vadodara, Gujarat</p>
+</footer>
+
+<div class="floating-buttons">
+  <a href="https://wa.me/919601949860?text=Hi%20Viral%2C%20I%27d%20like%20to%20know%20more%20about%20your%20nutrition%20services" class="float-btn float-whatsapp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+  <a href="https://www.instagram.com/nutritionist_viral" class="float-btn float-instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+  <a href="https://www.facebook.com/profile.php?id=100000057417354" class="float-btn float-facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385h-3.047v-3.47h3.047v-2.642c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.514c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385c5.738-.9 10.126-5.864 10.126-11.854z"/></svg></a>
+</div>
+
+<script>
+  var btn=document.getElementById('menuBtn');
+  var menu=document.getElementById('navLinks');
+  btn.onclick=function(){menu.classList.toggle('open')};
+  menu.querySelectorAll('a').forEach(function(a){a.onclick=function(){menu.classList.remove('open')}});
+  window.onscroll=function(){document.getElementById('mainNav').style.boxShadow=window.scrollY>50?'0 2px 20px rgba(0,0,0,0.08)':'none'};
+</script>
+</body>
+</html>
