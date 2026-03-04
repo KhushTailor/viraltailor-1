@@ -39,10 +39,9 @@
     .transform-card{background:#fff;border-radius:1.5rem;overflow:hidden;border:1px solid rgba(122,158,126,0.1);transition:all 0.4s}
     .transform-card:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(0,0,0,0.1)}
     .transform-visual{display:grid;grid-template-columns:1fr auto 1fr;height:220px;position:relative}
-    .before-side{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:0.5rem;font-size:4rem}
-    .before-bg{background:linear-gradient(135deg,#f5f5f5,#e0e0e0)}
-    .after-bg{background:linear-gradient(135deg,#e8f5e9,#c8e6c9)}
-    .side-label{font-size:0.65rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted)}
+    .transform-shot{position:relative;overflow:hidden}
+    .transform-shot img{width:100%;height:100%;object-fit:cover;display:block}
+    .side-label{position:absolute;left:12px;bottom:12px;background:rgba(0,0,0,0.64);color:#fff;font-size:0.65rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:0.25rem 0.55rem;border-radius:999px}
     .divider{display:flex;align-items:center;justify-content:center;background:var(--charcoal);width:40px;position:relative}
     .divider-arrow{color:#fff;font-size:1rem;font-weight:700}
     .transform-body{padding:1.5rem}
@@ -109,9 +108,9 @@
 
     <div class="transform-card">
       <div class="transform-visual">
-        <div class="before-side before-bg"><span>🙍‍♀️</span><span class="side-label">Before</span></div>
+        <div class="transform-shot"><img src="t1.png" alt="Before transformation photo"/><span class="side-label">Before</span></div>
         <div class="divider"><div class="divider-arrow">→</div></div>
-        <div class="before-side after-bg"><span>🧘‍♀️</span><span class="side-label">After</span></div>
+        <div class="transform-shot"><img src="t2.png" alt="After transformation photo"/><span class="side-label">After</span></div>
       </div>
       <div class="transform-body">
         <div class="transform-result"><div class="result-badge">−12 kg</div><div class="transform-time">In 3 months</div></div>
@@ -123,9 +122,9 @@
 
     <div class="transform-card">
       <div class="transform-visual">
-        <div class="before-side before-bg"><span>🙍‍♂️</span><span class="side-label">Before</span></div>
+        <div class="transform-shot"><img src="t3.png" alt="Before transformation photo"/><span class="side-label">Before</span></div>
         <div class="divider"><div class="divider-arrow">→</div></div>
-        <div class="before-side after-bg"><span>🏃‍♂️</span><span class="side-label">After</span></div>
+        <div class="transform-shot"><img src="t4.png" alt="After transformation photo"/><span class="side-label">After</span></div>
       </div>
       <div class="transform-body">
         <div class="transform-result"><div class="result-badge">−8 kg</div><div class="transform-time">In 2 months</div></div>
@@ -137,9 +136,9 @@
 
     <div class="transform-card">
       <div class="transform-visual">
-        <div class="before-side before-bg"><span>🙍‍♀️</span><span class="side-label">Before</span></div>
+        <div class="transform-shot"><img src="t5.png" alt="Before transformation photo"/><span class="side-label">Before</span></div>
         <div class="divider"><div class="divider-arrow">→</div></div>
-        <div class="before-side after-bg"><span>💃</span><span class="side-label">After</span></div>
+        <div class="transform-shot"><img src="t6.png" alt="After transformation photo"/><span class="side-label">After</span></div>
       </div>
       <div class="transform-body">
         <div class="transform-result"><div class="result-badge">−15 kg</div><div class="transform-time">In 4 months</div></div>
@@ -151,9 +150,9 @@
 
     <div class="transform-card">
       <div class="transform-visual">
-        <div class="before-side before-bg"><span>🙍‍♂️</span><span class="side-label">Before</span></div>
+        <div class="transform-shot"><img src="t7.png" alt="Before transformation photo"/><span class="side-label">Before</span></div>
         <div class="divider"><div class="divider-arrow">→</div></div>
-        <div class="before-side after-bg"><span>🏋️‍♂️</span><span class="side-label">After</span></div>
+        <div class="transform-shot"><img src="t8.png" alt="After transformation photo"/><span class="side-label">After</span></div>
       </div>
       <div class="transform-body">
         <div class="transform-result"><div class="result-badge">−10 kg</div><div class="transform-time">In 2.5 months</div></div>
@@ -165,9 +164,9 @@
 
     <div class="transform-card">
       <div class="transform-visual">
-        <div class="before-side before-bg"><span>🙍‍♀️</span><span class="side-label">Before</span></div>
+        <div class="transform-shot"><img src="t2.png" alt="Before transformation photo"/><span class="side-label">Before</span></div>
         <div class="divider"><div class="divider-arrow">→</div></div>
-        <div class="before-side after-bg"><span>🌸</span><span class="side-label">After</span></div>
+        <div class="transform-shot"><img src="t5.png" alt="After transformation photo"/><span class="side-label">After</span></div>
       </div>
       <div class="transform-body">
         <div class="transform-result"><div class="result-badge">−9 kg</div><div class="transform-time">In 3 months</div></div>
@@ -179,9 +178,9 @@
 
     <div class="transform-card">
       <div class="transform-visual">
-        <div class="before-side before-bg"><span>🙍‍♀️</span><span class="side-label">Before</span></div>
+        <div class="transform-shot"><img src="t4.png" alt="Before transformation photo"/><span class="side-label">Before</span></div>
         <div class="divider"><div class="divider-arrow">→</div></div>
-        <div class="before-side after-bg"><span>✨</span><span class="side-label">After</span></div>
+        <div class="transform-shot"><img src="t7.png" alt="After transformation photo"/><span class="side-label">After</span></div>
       </div>
       <div class="transform-body">
         <div class="transform-result"><div class="result-badge">−7 kg</div><div class="transform-time">In 6 weeks</div></div>
